@@ -120,32 +120,17 @@ DataFrame:
 
 ## 8. Project Structure
 ```
-weather_etl_project/
-├── weather_etl_colab.ipynb   # Colab/Jupyter notebook version (recommended for demo)
-├── weather_etl.py            # Equivalent standalone script (for VS Code)
-├── requirements.txt          # Python dependencies
-├── README.md                 # This file
-├── .gitignore                # Keeps cache/checkpoint files out of GitHub
-└── data/                     # Output folder (created after running the pipeline)
-    ├── weather_data.csv
-    ├── weather_data.db
-    └── top10_hottest.png
+
 ```
 
 ## 9. How to Run
-**Option A — Google Colab (recommended for the demo video)**
+Google Colab (recommended for the demo video)**
 1. Go to https://colab.research.google.com → File → Upload notebook →
    select `weather_etl_colab.ipynb`.
 2. Run each cell top to bottom with Shift+Enter, narrating what each stage
    does as you go. The extract step takes ~15–20 seconds for all 54 cities.
 
-**Option B — VS Code / local machine**
-1. Open the `weather_etl_project` folder in VS Code.
-2. Create a virtual environment (optional but recommended):
-   `python -m venv venv` then activate it.
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run: `python weather_etl.py`
-5. Check the `data/` folder for the CSV and SQLite outputs.
+
 
 ## 10. Security Note
 The API key in this repo's code is included directly so it's easy to explain
